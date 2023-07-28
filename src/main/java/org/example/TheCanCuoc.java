@@ -1,43 +1,54 @@
 package org.example;
 
 public class TheCanCuoc {
-        TheCanCuoc(){}
-        String fullName;
-        public String getName(){
-            return fullName;
-        }
-        public void setName(String newfullName){
-            this.fullName = newfullName;
-        }
-        int age;
-        public int getAge(){
-            return age;
-        }
-        public void setAge(int newage){
-            this.age = newage;
-        }
-        boolean isBoy = false;
-        public boolean getisBoy(){
-            return isBoy;
-        }
-        public void setisBoy(boolean newisBoy){
-            this.isBoy = newisBoy;
-        }
+        private String fullName;
+        private int age;
+        private boolean isBoy = false;
+        private String personalIdentification;
+        private String address;
 
-        String personalIdentification;
-        public String getPersonalIdentification(){
-            return personalIdentification;
-        }
+    public TheCanCuoc(String fullName, int age) {
+        this.fullName = fullName;
+        this.age = age;
+    }
 
-        public void  setPersonalIdentification(String newsetPersonalIdentification){
-            this.personalIdentification = newsetPersonalIdentification;
-        }
-        String address;
-        public String getAddress(){
-            return address;
-        }
-        public void setAddress(String newaddress){
-            this.address = newaddress;
-        }
+   public String getFullName() {
+        return fullName;
+    }
+    public int getAge() {
+        return age;
+    }
 
+    public boolean isBoy() {
+        return isBoy;
+    }
+
+    public void setBoy(boolean boy) {
+        isBoy = boy;
+    }
+
+    public String getPersonalIdentification() {
+        return personalIdentification;
+    }
+
+    public void setPersonalIdentification(String personalIdentification) {
+        this.personalIdentification = personalIdentification;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    @Override
+    public String  toString() {
+        return  "fullName='" + fullName + '\'' +
+                ", age=" + age +
+                ", isBoy=" + isBoy +
+                ", personalIdentification='" + personalIdentification + '\'' +
+                ", address='" + address ;
+
+    }
 }
