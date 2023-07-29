@@ -1,20 +1,27 @@
 package org.example;
 
 public class TheCanCuoc {
-        private String fullName;
+        private String firstName;
+        private String lastName;
         private int age;
         private boolean isBoy = false;
         private String personalIdentification;
         private String address;
 
-    public TheCanCuoc(String fullName, int age) {
-        this.fullName = fullName;
+    public TheCanCuoc(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
     }
 
-   public String getFullName() {
-        return fullName;
+    public String getFirstName() {
+        return firstName;
     }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     public int getAge() {
         return age;
     }
@@ -24,7 +31,7 @@ public class TheCanCuoc {
     }
 
     public void setBoy(boolean boy) {
-        isBoy = boy;
+        this.isBoy = boy;
     }
 
     public String getPersonalIdentification() {
@@ -44,11 +51,11 @@ public class TheCanCuoc {
     }
     @Override
     public String  toString() {
-        return  "fullName='" + fullName + '\'' +
+        return  "fullName='" + firstName + '\'' +
                 ", age=" + age +
                 ", isBoy=" + isBoy +
                 ", personalIdentification='" + personalIdentification + '\'' +
-                ", address='" + address ;
+                ", address='" + address +"'" ;
 
     }
 }
