@@ -8,31 +8,31 @@ public class BaiTapTheCanCuoc {
         user01.setBoy(false);
         user01.setPersonalIdentification("0011");
         user01.setAddress("HaNoi");
-        System.out.println(user01);
+        //System.out.println(user01);
 
-        TheCanCuoc user02 = new TheCanCuoc("Tuan", "Nguyen",20);
+        TheCanCuoc user02 = new TheCanCuoc("Tuan", "Ngo",20);
         user02.setBoy(true);
         user02.setPersonalIdentification("0012");
         user02.setAddress("NamDinh");
-        System.out.println(user02);
+        //System.out.println(user02);
 
         TheCanCuoc user03 = new TheCanCuoc("Ngoc", "Tran",31);
         user03.setBoy(false);
         user03.setPersonalIdentification("0013");
         user03.setAddress("HaiPhong");
-        System.out.println(user03);
+        //System.out.println(user03);
 
         TheCanCuoc user04 =new TheCanCuoc("Duong", "Nguyen",17);
         user04.setBoy(true);
         user04.setPersonalIdentification("0014");
         user04.setAddress("HaiPhong");
-        System.out.println(user04);
+        //System.out.println(user04);
 
         TheCanCuoc user05 = new TheCanCuoc("Thanh", "Le",20);
         user05.setBoy(true);
         user05.setPersonalIdentification("0015");
         user05.setAddress("ThaiBinh");
-        System.out.println(user05);
+        //System.out.println(user05);
 
         ArrayList<TheCanCuoc> people = new ArrayList<TheCanCuoc>();
         people.add(new TheCanCuoc("Manh","Vu",26));
@@ -56,5 +56,25 @@ public class BaiTapTheCanCuoc {
                 System.out.println(userAge.getFirstName()+" "+userAge.getLastName()+": "+userAge.getAge());
             }
         }
+        for (int i = 0; i < people.size(); i++) {
+            if(people.get(i).getAge()>18){
+                System.out.println(people.get(i));
+            }
+        }
+        int k = 0;
+        while (k< people.size()){
+            if(people.get(k).getLastName().equals("Pham")){
+                System.out.println(people.get(k));
+             };
+             k++;
+        };
+        int j = 0;
+        do {
+            if(people.get(j).getLastName().startsWith("N")){
+                System.out.println(people.get(j));
+            };
+            j++;
+        }
+        while (j<people.size());
     }
 }

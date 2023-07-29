@@ -51,7 +51,8 @@ public class TheCanCuoc {
     }
     @Override
     public String  toString() {
-        return  "fullName='" + firstName + '\'' +
+        return  "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", isBoy=" + isBoy +
                 ", personalIdentification='" + personalIdentification + '\'' +
