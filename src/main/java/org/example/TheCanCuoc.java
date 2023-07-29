@@ -49,7 +49,7 @@ public class TheCanCuoc {
     public void setAddress(String address) {
         this.address = address;
     }
-    @Override
+
     public String  toString() {
         return  "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -57,6 +57,7 @@ public class TheCanCuoc {
                 ", isBoy=" + isBoy +
                 ", personalIdentification='" + personalIdentification + '\'' +
                 ", address='" + address +"'" ;
+
 
     }
 }
