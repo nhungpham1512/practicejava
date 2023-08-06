@@ -14,7 +14,7 @@ public class TheCanCuoc {
         this.age = age;
     }
 
-    public String getFirstName() {
+     public String getFirstName() {
         return firstName;
     }
 
