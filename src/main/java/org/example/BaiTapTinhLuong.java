@@ -20,6 +20,6 @@ public class BaiTapTinhLuong {
     @Test
     public void Caculate_Luong_Thang8_InCorrectly(){
         System.out.println(luongThang8);
-        Assert.assertEquals(4400,luongThang8,1.0);
+        Assert.assertEquals(300,luongThang8,1.0);
     }
 }
